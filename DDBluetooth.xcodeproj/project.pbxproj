@@ -1,0 +1,522 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A62BEA511CE1EC6C009F2373 /* DateTimeUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A62BEA501CE1EC6C009F2373 /* DateTimeUtil.m */; };
+		A62CA62F1CE2CD1A0080ABCF /* UIButton+ActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = A62CA62E1CE2CD1A0080ABCF /* UIButton+ActivityIndicator.m */; };
+		A62CA6321CE2D6D60080ABCF /* AlertUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A62CA6311CE2D6D60080ABCF /* AlertUtil.m */; };
+		A63CC5261CCF1C2F00241301 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A63CC5251CCF1C2F00241301 /* main.m */; };
+		A63CC52F1CCF1C2F00241301 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A63CC52D1CCF1C2F00241301 /* Main.storyboard */; };
+		A63CC5311CCF1C2F00241301 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A63CC5301CCF1C2F00241301 /* Assets.xcassets */; };
+		A63CC5341CCF1C2F00241301 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A63CC5321CCF1C2F00241301 /* LaunchScreen.storyboard */; };
+		A63CC5B41CCF1CDD00241301 /* DDPeripheralConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = A63CC5581CCF1CDD00241301 /* DDPeripheralConstant.m */; };
+		A63CC5B51CCF1CDD00241301 /* DDTimeoutConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = A63CC55A1CCF1CDD00241301 /* DDTimeoutConstant.m */; };
+		A63CC5B81CCF1CDD00241301 /* DDStoredPeripherals.m in Sources */ = {isa = PBXBuildFile; fileRef = A63CC5611CCF1CDD00241301 /* DDStoredPeripherals.m */; };
+		A63CC5B91CCF1CDD00241301 /* DDScannedPeripherals.m in Sources */ = {isa = PBXBuildFile; fileRef = A63CC5631CCF1CDD00241301 /* DDScannedPeripherals.m */; };
+		A63CC5D01CCF1CDD00241301 /* DDErrorUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A63CC59A1CCF1CDD00241301 /* DDErrorUtil.m */; };
+		A63CC5D31CCF1CDD00241301 /* NSData+Conversion.m in Sources */ = {isa = PBXBuildFile; fileRef = A63CC5A01CCF1CDD00241301 /* NSData+Conversion.m */; };
+		A63CC5D41CCF1CDD00241301 /* NSMutableArray+KeySort.m in Sources */ = {isa = PBXBuildFile; fileRef = A63CC5A21CCF1CDD00241301 /* NSMutableArray+KeySort.m */; };
+		A63CC5D61CCF1CDD00241301 /* DDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A63CC5A71CCF1CDD00241301 /* DDAppDelegate.m */; };
+		A63CC5EF1CCF1ED500241301 /* DDCentralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A63CC5DC1CCF1ED500241301 /* DDCentralManager.m */; };
+		A63CC5F01CCF1ED500241301 /* DDConnectAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = A63CC5DE1CCF1ED500241301 /* DDConnectAgent.m */; };
+		A63CC5F11CCF1ED500241301 /* DDScanAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = A63CC5E01CCF1ED500241301 /* DDScanAgent.m */; };
+		A63CC5F51CCF1ED500241301 /* DDTransactionAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = A63CC5EA1CCF1ED500241301 /* DDTransactionAgent.m */; };
+		A64307B31CD1DF4A00396DB3 /* DDScanViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A64307B21CD1DF4A00396DB3 /* DDScanViewCell.m */; };
+		A64307B61CD20A2600396DB3 /* DDButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A64307B51CD20A2600396DB3 /* DDButton.m */; };
+		A64307B91CD212F300396DB3 /* DDConnectAndDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A64307B81CD212F300396DB3 /* DDConnectAndDiscoverViewController.m */; };
+		A64307BC1CD2132C00396DB3 /* DDScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A64307BB1CD2132C00396DB3 /* DDScanViewController.m */; };
+		A6468FBB1CDDDEFB009019AE /* DDTransactionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6468FBA1CDDDEFB009019AE /* DDTransactionViewController.m */; };
+		A64ABA541CE04BC700F5F857 /* DDTransactionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A64ABA531CE04BC700F5F857 /* DDTransactionViewCell.m */; };
+		A64ABA571CE063BB00F5F857 /* DDTransactionCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A64ABA561CE063BB00F5F857 /* DDTransactionCellModel.m */; };
+		A699B6C41CCF5EA600320FA0 /* CBPeripheral+DD.m in Sources */ = {isa = PBXBuildFile; fileRef = A699B6C31CCF5EA600320FA0 /* CBPeripheral+DD.m */; };
+		A699B6CD1CCF7D9000320FA0 /* UIBarButtonItem+ActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = A699B6CC1CCF7D9000320FA0 /* UIBarButtonItem+ActivityIndicator.m */; };
+		A6DEDF331CE0876A00C32C2C /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = A6DEDF321CE0876A00C32C2C /* Constants.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A62BEA4E1CE19E92009F2373 /* ViewStates.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewStates.h; sourceTree = "<group>"; };
+		A62BEA4F1CE1EC6C009F2373 /* DateTimeUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateTimeUtil.h; sourceTree = "<group>"; };
+		A62BEA501CE1EC6C009F2373 /* DateTimeUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateTimeUtil.m; sourceTree = "<group>"; };
+		A62CA62D1CE2CD1A0080ABCF /* UIButton+ActivityIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+ActivityIndicator.h"; sourceTree = "<group>"; };
+		A62CA62E1CE2CD1A0080ABCF /* UIButton+ActivityIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ActivityIndicator.m"; sourceTree = "<group>"; };
+		A62CA6301CE2D6D60080ABCF /* AlertUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertUtil.h; sourceTree = "<group>"; };
+		A62CA6311CE2D6D60080ABCF /* AlertUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertUtil.m; sourceTree = "<group>"; };
+		A62CA6331CE31EDC0080ABCF /* DDBluetooth-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DDBluetooth-Prefix.pch"; sourceTree = "<group>"; };
+		A63CC5211CCF1C2F00241301 /* DDBluetooth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DDBluetooth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A63CC5251CCF1C2F00241301 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A63CC52E1CCF1C2F00241301 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A63CC5301CCF1C2F00241301 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A63CC5331CCF1C2F00241301 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A63CC5351CCF1C2F00241301 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A63CC5571CCF1CDD00241301 /* DDPeripheralConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDPeripheralConstant.h; sourceTree = "<group>"; };
+		A63CC5581CCF1CDD00241301 /* DDPeripheralConstant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDPeripheralConstant.m; sourceTree = "<group>"; };
+		A63CC5591CCF1CDD00241301 /* DDTimeoutConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTimeoutConstant.h; sourceTree = "<group>"; };
+		A63CC55A1CCF1CDD00241301 /* DDTimeoutConstant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTimeoutConstant.m; sourceTree = "<group>"; };
+		A63CC5601CCF1CDD00241301 /* DDStoredPeripherals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDStoredPeripherals.h; sourceTree = "<group>"; };
+		A63CC5611CCF1CDD00241301 /* DDStoredPeripherals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDStoredPeripherals.m; sourceTree = "<group>"; };
+		A63CC5621CCF1CDD00241301 /* DDScannedPeripherals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDScannedPeripherals.h; sourceTree = "<group>"; };
+		A63CC5631CCF1CDD00241301 /* DDScannedPeripherals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDScannedPeripherals.m; sourceTree = "<group>"; };
+		A63CC5991CCF1CDD00241301 /* DDErrorUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDErrorUtil.h; sourceTree = "<group>"; };
+		A63CC59A1CCF1CDD00241301 /* DDErrorUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDErrorUtil.m; sourceTree = "<group>"; };
+		A63CC59F1CCF1CDD00241301 /* NSData+Conversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Conversion.h"; sourceTree = "<group>"; };
+		A63CC5A01CCF1CDD00241301 /* NSData+Conversion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Conversion.m"; sourceTree = "<group>"; };
+		A63CC5A11CCF1CDD00241301 /* NSMutableArray+KeySort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+KeySort.h"; sourceTree = "<group>"; };
+		A63CC5A21CCF1CDD00241301 /* NSMutableArray+KeySort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+KeySort.m"; sourceTree = "<group>"; };
+		A63CC5A61CCF1CDD00241301 /* DDAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDAppDelegate.h; sourceTree = "<group>"; };
+		A63CC5A71CCF1CDD00241301 /* DDAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDAppDelegate.m; sourceTree = "<group>"; };
+		A63CC5DA1CCF1ED500241301 /* DDCentralCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDCentralCallback.h; sourceTree = "<group>"; };
+		A63CC5DB1CCF1ED500241301 /* DDCentralManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDCentralManager.h; sourceTree = "<group>"; };
+		A63CC5DC1CCF1ED500241301 /* DDCentralManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDCentralManager.m; sourceTree = "<group>"; };
+		A63CC5DD1CCF1ED500241301 /* DDConnectAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDConnectAgent.h; sourceTree = "<group>"; };
+		A63CC5DE1CCF1ED500241301 /* DDConnectAgent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDConnectAgent.m; sourceTree = "<group>"; };
+		A63CC5DF1CCF1ED500241301 /* DDScanAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDScanAgent.h; sourceTree = "<group>"; };
+		A63CC5E01CCF1ED500241301 /* DDScanAgent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDScanAgent.m; sourceTree = "<group>"; };
+		A63CC5E91CCF1ED500241301 /* DDTransactionAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTransactionAgent.h; sourceTree = "<group>"; };
+		A63CC5EA1CCF1ED500241301 /* DDTransactionAgent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTransactionAgent.m; sourceTree = "<group>"; };
+		A64307B11CD1DF4A00396DB3 /* DDScanViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDScanViewCell.h; sourceTree = "<group>"; };
+		A64307B21CD1DF4A00396DB3 /* DDScanViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDScanViewCell.m; sourceTree = "<group>"; };
+		A64307B41CD20A2600396DB3 /* DDButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDButton.h; sourceTree = "<group>"; };
+		A64307B51CD20A2600396DB3 /* DDButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDButton.m; sourceTree = "<group>"; };
+		A64307B71CD212F300396DB3 /* DDConnectAndDiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDConnectAndDiscoverViewController.h; sourceTree = "<group>"; };
+		A64307B81CD212F300396DB3 /* DDConnectAndDiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDConnectAndDiscoverViewController.m; sourceTree = "<group>"; };
+		A64307BA1CD2132C00396DB3 /* DDScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDScanViewController.h; sourceTree = "<group>"; };
+		A64307BB1CD2132C00396DB3 /* DDScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDScanViewController.m; sourceTree = "<group>"; };
+		A6468FB91CDDDEFB009019AE /* DDTransactionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTransactionViewController.h; sourceTree = "<group>"; };
+		A6468FBA1CDDDEFB009019AE /* DDTransactionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTransactionViewController.m; sourceTree = "<group>"; };
+		A64ABA521CE04BC700F5F857 /* DDTransactionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTransactionViewCell.h; sourceTree = "<group>"; };
+		A64ABA531CE04BC700F5F857 /* DDTransactionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTransactionViewCell.m; sourceTree = "<group>"; };
+		A64ABA551CE063BB00F5F857 /* DDTransactionCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTransactionCellModel.h; sourceTree = "<group>"; };
+		A64ABA561CE063BB00F5F857 /* DDTransactionCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTransactionCellModel.m; sourceTree = "<group>"; };
+		A699B6C21CCF5EA600320FA0 /* CBPeripheral+DD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CBPeripheral+DD.h"; sourceTree = "<group>"; };
+		A699B6C31CCF5EA600320FA0 /* CBPeripheral+DD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CBPeripheral+DD.m"; sourceTree = "<group>"; };
+		A699B6CB1CCF7D9000320FA0 /* UIBarButtonItem+ActivityIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+ActivityIndicator.h"; sourceTree = "<group>"; };
+		A699B6CC1CCF7D9000320FA0 /* UIBarButtonItem+ActivityIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+ActivityIndicator.m"; sourceTree = "<group>"; };
+		A6DEDF311CE0876A00C32C2C /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		A6DEDF321CE0876A00C32C2C /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A63CC51E1CCF1C2F00241301 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A63CC5181CCF1C2F00241301 = {
+			isa = PBXGroup;
+			children = (
+				A63CC5231CCF1C2F00241301 /* DDBluetooth */,
+				A63CC5221CCF1C2F00241301 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A63CC5221CCF1C2F00241301 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A63CC5211CCF1C2F00241301 /* DDBluetooth.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A63CC5231CCF1C2F00241301 /* DDBluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				A63CC53B1CCF1CDD00241301 /* DDBluetooth */,
+				A63CC5A51CCF1CDD00241301 /* DDBluetoothExample */,
+				A63CC52D1CCF1C2F00241301 /* Main.storyboard */,
+				A63CC5301CCF1C2F00241301 /* Assets.xcassets */,
+				A63CC5321CCF1C2F00241301 /* LaunchScreen.storyboard */,
+				A63CC5351CCF1C2F00241301 /* Info.plist */,
+				A63CC5241CCF1C2F00241301 /* Supporting Files */,
+			);
+			path = DDBluetooth;
+			sourceTree = "<group>";
+		};
+		A63CC5241CCF1C2F00241301 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A63CC5251CCF1C2F00241301 /* main.m */,
+				A62CA6331CE31EDC0080ABCF /* DDBluetooth-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A63CC53B1CCF1CDD00241301 /* DDBluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				A63CC5D81CCF1ED500241301 /* ble */,
+				A63CC5561CCF1CDD00241301 /* constants */,
+				A63CC55B1CCF1CDD00241301 /* database */,
+				A63CC5941CCF1CDD00241301 /* util */,
+			);
+			path = DDBluetooth;
+			sourceTree = "<group>";
+		};
+		A63CC5561CCF1CDD00241301 /* constants */ = {
+			isa = PBXGroup;
+			children = (
+				A63CC5571CCF1CDD00241301 /* DDPeripheralConstant.h */,
+				A63CC5581CCF1CDD00241301 /* DDPeripheralConstant.m */,
+				A63CC5591CCF1CDD00241301 /* DDTimeoutConstant.h */,
+				A63CC55A1CCF1CDD00241301 /* DDTimeoutConstant.m */,
+			);
+			path = constants;
+			sourceTree = "<group>";
+		};
+		A63CC55B1CCF1CDD00241301 /* database */ = {
+			isa = PBXGroup;
+			children = (
+				A63CC5601CCF1CDD00241301 /* DDStoredPeripherals.h */,
+				A63CC5611CCF1CDD00241301 /* DDStoredPeripherals.m */,
+				A63CC5621CCF1CDD00241301 /* DDScannedPeripherals.h */,
+				A63CC5631CCF1CDD00241301 /* DDScannedPeripherals.m */,
+			);
+			path = database;
+			sourceTree = "<group>";
+		};
+		A63CC5941CCF1CDD00241301 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				A63CC5991CCF1CDD00241301 /* DDErrorUtil.h */,
+				A63CC59A1CCF1CDD00241301 /* DDErrorUtil.m */,
+				A63CC59F1CCF1CDD00241301 /* NSData+Conversion.h */,
+				A63CC5A01CCF1CDD00241301 /* NSData+Conversion.m */,
+				A63CC5A11CCF1CDD00241301 /* NSMutableArray+KeySort.h */,
+				A63CC5A21CCF1CDD00241301 /* NSMutableArray+KeySort.m */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		A63CC5A51CCF1CDD00241301 /* DDBluetoothExample */ = {
+			isa = PBXGroup;
+			children = (
+				A63CC5A61CCF1CDD00241301 /* DDAppDelegate.h */,
+				A63CC5A71CCF1CDD00241301 /* DDAppDelegate.m */,
+				A64307BA1CD2132C00396DB3 /* DDScanViewController.h */,
+				A64307BB1CD2132C00396DB3 /* DDScanViewController.m */,
+				A64307B71CD212F300396DB3 /* DDConnectAndDiscoverViewController.h */,
+				A64307B81CD212F300396DB3 /* DDConnectAndDiscoverViewController.m */,
+				A6468FB91CDDDEFB009019AE /* DDTransactionViewController.h */,
+				A6468FBA1CDDDEFB009019AE /* DDTransactionViewController.m */,
+				A64307B11CD1DF4A00396DB3 /* DDScanViewCell.h */,
+				A64307B21CD1DF4A00396DB3 /* DDScanViewCell.m */,
+				A64ABA521CE04BC700F5F857 /* DDTransactionViewCell.h */,
+				A64ABA531CE04BC700F5F857 /* DDTransactionViewCell.m */,
+				A64ABA551CE063BB00F5F857 /* DDTransactionCellModel.h */,
+				A64ABA561CE063BB00F5F857 /* DDTransactionCellModel.m */,
+				A64307B41CD20A2600396DB3 /* DDButton.h */,
+				A64307B51CD20A2600396DB3 /* DDButton.m */,
+				A62CA62D1CE2CD1A0080ABCF /* UIButton+ActivityIndicator.h */,
+				A62CA62E1CE2CD1A0080ABCF /* UIButton+ActivityIndicator.m */,
+				A699B6CB1CCF7D9000320FA0 /* UIBarButtonItem+ActivityIndicator.h */,
+				A699B6CC1CCF7D9000320FA0 /* UIBarButtonItem+ActivityIndicator.m */,
+				A62BEA4F1CE1EC6C009F2373 /* DateTimeUtil.h */,
+				A62BEA501CE1EC6C009F2373 /* DateTimeUtil.m */,
+				A62CA6301CE2D6D60080ABCF /* AlertUtil.h */,
+				A62CA6311CE2D6D60080ABCF /* AlertUtil.m */,
+				A6DEDF311CE0876A00C32C2C /* Constants.h */,
+				A6DEDF321CE0876A00C32C2C /* Constants.m */,
+				A62BEA4E1CE19E92009F2373 /* ViewStates.h */,
+			);
+			path = DDBluetoothExample;
+			sourceTree = "<group>";
+		};
+		A63CC5D81CCF1ED500241301 /* ble */ = {
+			isa = PBXGroup;
+			children = (
+				A63CC5D91CCF1ED500241301 /* central */,
+				A63CC5E11CCF1ED500241301 /* peripheral */,
+			);
+			path = ble;
+			sourceTree = "<group>";
+		};
+		A63CC5D91CCF1ED500241301 /* central */ = {
+			isa = PBXGroup;
+			children = (
+				A63CC5DA1CCF1ED500241301 /* DDCentralCallback.h */,
+				A63CC5DB1CCF1ED500241301 /* DDCentralManager.h */,
+				A63CC5DC1CCF1ED500241301 /* DDCentralManager.m */,
+				A63CC5DD1CCF1ED500241301 /* DDConnectAgent.h */,
+				A63CC5DE1CCF1ED500241301 /* DDConnectAgent.m */,
+				A63CC5DF1CCF1ED500241301 /* DDScanAgent.h */,
+				A63CC5E01CCF1ED500241301 /* DDScanAgent.m */,
+			);
+			path = central;
+			sourceTree = "<group>";
+		};
+		A63CC5E11CCF1ED500241301 /* peripheral */ = {
+			isa = PBXGroup;
+			children = (
+				A699B6C21CCF5EA600320FA0 /* CBPeripheral+DD.h */,
+				A699B6C31CCF5EA600320FA0 /* CBPeripheral+DD.m */,
+				A63CC5E91CCF1ED500241301 /* DDTransactionAgent.h */,
+				A63CC5EA1CCF1ED500241301 /* DDTransactionAgent.m */,
+			);
+			path = peripheral;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A63CC5201CCF1C2F00241301 /* DDBluetooth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A63CC5381CCF1C2F00241301 /* Build configuration list for PBXNativeTarget "DDBluetooth" */;
+			buildPhases = (
+				A63CC51D1CCF1C2F00241301 /* Sources */,
+				A63CC51E1CCF1C2F00241301 /* Frameworks */,
+				A63CC51F1CCF1C2F00241301 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DDBluetooth;
+			productName = DDBluetooth;
+			productReference = A63CC5211CCF1C2F00241301 /* DDBluetooth.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A63CC5191CCF1C2F00241301 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Daiki Ichikawa";
+				TargetAttributes = {
+					A63CC5201CCF1C2F00241301 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = A63CC51C1CCF1C2F00241301 /* Build configuration list for PBXProject "DDBluetooth" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A63CC5181CCF1C2F00241301;
+			productRefGroup = A63CC5221CCF1C2F00241301 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A63CC5201CCF1C2F00241301 /* DDBluetooth */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A63CC51F1CCF1C2F00241301 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A63CC5341CCF1C2F00241301 /* LaunchScreen.storyboard in Resources */,
+				A63CC5311CCF1C2F00241301 /* Assets.xcassets in Resources */,
+				A63CC52F1CCF1C2F00241301 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A63CC51D1CCF1C2F00241301 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A63CC5F51CCF1ED500241301 /* DDTransactionAgent.m in Sources */,
+				A64ABA541CE04BC700F5F857 /* DDTransactionViewCell.m in Sources */,
+				A64ABA571CE063BB00F5F857 /* DDTransactionCellModel.m in Sources */,
+				A62BEA511CE1EC6C009F2373 /* DateTimeUtil.m in Sources */,
+				A62CA6321CE2D6D60080ABCF /* AlertUtil.m in Sources */,
+				A63CC5D41CCF1CDD00241301 /* NSMutableArray+KeySort.m in Sources */,
+				A63CC5D01CCF1CDD00241301 /* DDErrorUtil.m in Sources */,
+				A699B6C41CCF5EA600320FA0 /* CBPeripheral+DD.m in Sources */,
+				A63CC5D31CCF1CDD00241301 /* NSData+Conversion.m in Sources */,
+				A63CC5D61CCF1CDD00241301 /* DDAppDelegate.m in Sources */,
+				A64307B61CD20A2600396DB3 /* DDButton.m in Sources */,
+				A63CC5B81CCF1CDD00241301 /* DDStoredPeripherals.m in Sources */,
+				A63CC5B51CCF1CDD00241301 /* DDTimeoutConstant.m in Sources */,
+				A63CC5B41CCF1CDD00241301 /* DDPeripheralConstant.m in Sources */,
+				A64307BC1CD2132C00396DB3 /* DDScanViewController.m in Sources */,
+				A63CC5B91CCF1CDD00241301 /* DDScannedPeripherals.m in Sources */,
+				A62CA62F1CE2CD1A0080ABCF /* UIButton+ActivityIndicator.m in Sources */,
+				A699B6CD1CCF7D9000320FA0 /* UIBarButtonItem+ActivityIndicator.m in Sources */,
+				A64307B91CD212F300396DB3 /* DDConnectAndDiscoverViewController.m in Sources */,
+				A63CC5EF1CCF1ED500241301 /* DDCentralManager.m in Sources */,
+				A63CC5F01CCF1ED500241301 /* DDConnectAgent.m in Sources */,
+				A63CC5F11CCF1ED500241301 /* DDScanAgent.m in Sources */,
+				A6468FBB1CDDDEFB009019AE /* DDTransactionViewController.m in Sources */,
+				A63CC5261CCF1C2F00241301 /* main.m in Sources */,
+				A64307B31CD1DF4A00396DB3 /* DDScanViewCell.m in Sources */,
+				A6DEDF331CE0876A00C32C2C /* Constants.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A63CC52D1CCF1C2F00241301 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A63CC52E1CCF1C2F00241301 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A63CC5321CCF1C2F00241301 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A63CC5331CCF1C2F00241301 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A63CC5361CCF1C2F00241301 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A63CC5371CCF1C2F00241301 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A63CC5391CCF1C2F00241301 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREFIX_HEADER = "$(PRODUCT_NAME)/DDBluetooth-Prefix.pch";
+				INFOPLIST_FILE = DDBluetooth/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.DDBluetooth.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A63CC53A1CCF1C2F00241301 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREFIX_HEADER = "$(PRODUCT_NAME)/DDBluetooth-Prefix.pch";
+				INFOPLIST_FILE = DDBluetooth/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.DDBluetooth.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A63CC51C1CCF1C2F00241301 /* Build configuration list for PBXProject "DDBluetooth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A63CC5361CCF1C2F00241301 /* Debug */,
+				A63CC5371CCF1C2F00241301 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A63CC5381CCF1C2F00241301 /* Build configuration list for PBXNativeTarget "DDBluetooth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A63CC5391CCF1C2F00241301 /* Debug */,
+				A63CC53A1CCF1C2F00241301 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A63CC5191CCF1C2F00241301 /* Project object */;
+}

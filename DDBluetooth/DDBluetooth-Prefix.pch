@@ -1,0 +1,17 @@
+//
+//  DDBluetooth-Prefix.pch
+//  DDBluetooth
+//
+//  Created by daiki ichikawa on 2016/05/11.
+//  Copyright © 2016年 Daiki Ichikawa. All rights reserved.
+//
+
+#ifndef DDBluetooth_Prefix_pch
+#define DDBluetooth_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#define DD_PERFORM_ON_MAIN_THREAD(block) dispatch_async(dispatch_get_main_queue(), block);
+
+#endif /* DDBluetooth_Prefix_pch */
