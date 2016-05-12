@@ -1,10 +1,27 @@
 #DDBluetooth
 Practical, block-based, and lightweight CoreBluetooth library for iOS.
 
+##How to add to your project
+Simply add "DDBluetooth" directory to your project
 
-##What You Can Do
-###Initialization
 
+##Usage
+###Initialize
+・Initialize core bluetooth central   
+・callback CBCentralManagerState
+
+```objective-c
+[[DDCentralManager sharedManager] initialize:centralQueue options:options didInitialize:^(CBCentralManagerState state) {
+        switch (state) {
+            case CBCentralManagerStatePoweredOn:
+				// Bluetooth is available on this device
+                break;
+            default:
+                // Bluetooth is currently not available on this device"
+                break;
+        }
+}];
+```
 
 
 ### Scan
@@ -29,7 +46,7 @@ Practical, block-based, and lightweight CoreBluetooth library for iOS.
 ・callback when timeout   
 ・callback when disconnected unexpectedly    
 
-```
+```objective-c
 [self.ddConnectAgent startConnectionWithRetry:self.ddPeripheral
                                 withMaxRetryCount:10
                                          interval:2.f
@@ -59,7 +76,7 @@ Practical, block-based, and lightweight CoreBluetooth library for iOS.
 ・callback when finish discovering characteristics   
 ・callback when timeout   
 
-```
+```objective-c
 [self.ddConnectAgent discover:self.ddPeripheral didDiscover:^(NSArray * _Nullable characteristics, NSError * _Nullable error) {
 
         if (error)
@@ -77,7 +94,7 @@ Practical, block-based, and lightweight CoreBluetooth library for iOS.
 ・callback when success     
 ・callback when fail 
 
-```
+```objective-c
 [self.ddTransactionAgent indicate:characteristic didIndicate:^(DDTransactionAgentCallbackType type, NSData *data, NSError *error) {
 
         if (error)
@@ -103,13 +120,45 @@ Practical, block-based, and lightweight CoreBluetooth library for iOS.
 }];
 ```   
 
+
+###Notification
+there are 2 ways to handle notified values from peripheral   
+1. handle value in blocks 
+
+```objective-c
+[self.ddTransactionAgent indicate:characteristic didIndicate:^(DDTransactionAgentCallbackType type, NSData *data, NSError *error) {
+
+    if (type == DDTransactionAgentCallbackTypeNotifiedValue)
+    {
+		// "DDTransactionAgentCallbackTypeNotifiedValue" could be returned 
+		// either read, write or idicate blocks.
+    }
+}];
+
+```
+  
+2. handle value with a delegate method      
+
+```objective-c
+- (void)didNotifiedValue:(CBCharacteristic *)characteristic value:(NSData *)value error:(NSError *)error {
+    if (error)
+    {
+        // Faild to receive notification
+    }
+    else
+    {
+		// Do something with notified value
+    }
+}
+```
+
 	
 ### Read Chararacteristics value
 ・callback when success    
 ・callback when fail   
 ・callback when timeout   
 
-```
+```objective-c
 [self.ddTransactionAgent read:characteristic didRead:^(DDTransactionAgentCallbackType type, NSData *data, NSError *error) {
         
         if (error)
@@ -137,7 +186,7 @@ Practical, block-based, and lightweight CoreBluetooth library for iOS.
 ・callback when fail  
 ・callback when timeout 
 
-```
+```objective-c
 [self.ddTransactionAgent writeSplit:characteristic
                                    data:data
                                    withResponse:isWriteWithResponse
@@ -167,7 +216,7 @@ Practical, block-based, and lightweight CoreBluetooth library for iOS.
 ・callback when fail   
 ・callback when timeout   
 
-```
+```objective-c
 [self.ddConnectAgent disconnect:^(CBPeripheral * _Nullable peripheral, ConnectionStatus status, NSError * _Nullable error) {
         if (error)
         {
@@ -188,7 +237,7 @@ Practical, block-based, and lightweight CoreBluetooth library for iOS.
 If paring is not required, "didModifyService" wouldn't be called)
 	
 - Practical reconnect method to corp with iOS BTServer crash bug.
-	- iPhone 5s and older devices seems to have a problem establishing a connection with peripherals that immediately disconnect after "didConnectPeripheral" called.
+	- iPhone 5s and older devices seems to have a problem establishing a connection with peripherals that immediately disconnects after "didConnectPeripheral" called.
 
 ```
 BTServer[57] <Error>: ATT Failed to set MTU to 158 with result BM3 STATUS 14  
@@ -199,6 +248,9 @@ BTServer[57] <Error>: ATT Aborting command as device "XXXXXXXX-XXXX-XXXX-XXXX-XX
 
 ##Blocks Callback Design
 
+###Initialize   
+`state` - "CBCentralManagerState" will be returned to check bluetooth status on the central devices
+
 ### Scan
 `found` - called whenever new peripheral is found   
 `stop` - called when scan stops after specified interval
@@ -206,7 +258,7 @@ BTServer[57] <Error>: ATT Aborting command as device "XXXXXXXX-XXXX-XXXX-XXXX-XX
 
 ### Read / Write / Indication   
 
-```
+```objective-c
 if(error) 
 {
 	// Handle error
@@ -219,7 +271,7 @@ else
 
 ### Connect / Disconnect
 
-```
+```objective-c
 if(error) 
 {
 	// Handle error
@@ -237,3 +289,24 @@ else
 ・Retrive peripherals if exist   
 ・If intended peripherals cannot be retrieved, try to connect to designated peripheral with retry enabled.
 
+### Formatting
+・Add proper license descrptions & comments to source.
+
+
+##License   
+
+```
+Copyright 2015-2016 Daiki Ichikawa
+
+Licensed under the Apache License, Version 2.0 (the "License");   
+you may not use this file except in compliance with the License.   
+You may obtain a copy of the License at   
+
+http://www.apache.org/licenses/LICENSE-2.0   
+
+Unless required by applicable law or agreed to in writing, software   
+distributed under the License is distributed on an "AS IS" BASIS,   
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.   
+See the License for the specific language governing permissions and   
+limitations under the License.   
+```
