@@ -69,7 +69,7 @@
 		A63CC5A21CCF1CDD00241301 /* NSMutableArray+KeySort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+KeySort.m"; sourceTree = "<group>"; };
 		A63CC5A61CCF1CDD00241301 /* DDAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDAppDelegate.h; sourceTree = "<group>"; };
 		A63CC5A71CCF1CDD00241301 /* DDAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDAppDelegate.m; sourceTree = "<group>"; };
-		A63CC5DA1CCF1ED500241301 /* DDCentralCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDCentralCallback.h; sourceTree = "<group>"; };
+		A63CC5DA1CCF1ED500241301 /* DDCentralBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDCentralBlocks.h; sourceTree = "<group>"; };
 		A63CC5DB1CCF1ED500241301 /* DDCentralManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDCentralManager.h; sourceTree = "<group>"; };
 		A63CC5DC1CCF1ED500241301 /* DDCentralManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDCentralManager.m; sourceTree = "<group>"; };
 		A63CC5DD1CCF1ED500241301 /* DDConnectAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDConnectAgent.h; sourceTree = "<group>"; };
@@ -242,7 +242,7 @@
 		A63CC5D91CCF1ED500241301 /* central */ = {
 			isa = PBXGroup;
 			children = (
-				A63CC5DA1CCF1ED500241301 /* DDCentralCallback.h */,
+				A63CC5DA1CCF1ED500241301 /* DDCentralBlocks.h */,
 				A63CC5DB1CCF1ED500241301 /* DDCentralManager.h */,
 				A63CC5DC1CCF1ED500241301 /* DDCentralManager.m */,
 				A63CC5DD1CCF1ED500241301 /* DDConnectAgent.h */,
