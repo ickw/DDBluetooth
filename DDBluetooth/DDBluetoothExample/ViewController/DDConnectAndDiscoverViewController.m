@@ -127,13 +127,12 @@
                                            
         if (error)
         {
-            [weakSelf setViewState:DDViewStateDisconnected];
-            
             // Notify disconnected event
             [[NSNotificationCenter defaultCenter] postNotificationName:NOTIFICATION_DISCONNECTED object:self userInfo:nil];
             
             // update UI in main queue
             DD_PERFORM_ON_MAIN_THREAD(^{
+                [weakSelf setViewState:DDViewStateDisconnected];
                 [AlertUtil showConfirmationWithTitle:@"Error" message:error.localizedDescription];
             });
         }

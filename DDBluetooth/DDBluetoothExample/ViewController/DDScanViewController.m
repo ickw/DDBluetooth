@@ -95,6 +95,7 @@
     cell.serviceUUIDLabel.text = [p.serviceUUIDs componentsJoinedByString:@", "];
     cell.identifierLabel.text = p.identifier.UUIDString;
     cell.rssiLabel.text = [NSString stringWithFormat:@"%@", p.foundRSSI];
+    cell.iconImageView.image = [UIImage imageNamed:@"cell_image"];
     
     return cell;
 }

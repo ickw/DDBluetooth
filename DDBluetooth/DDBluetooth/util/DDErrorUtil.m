@@ -30,8 +30,8 @@ static NSString * const kDDBluetoothErrorDomain = @"com.ddbluetooth.error.domain
 
 + (NSError *)errorWithCode:(kDDBluetoothErrorCode)errorCode description:(NSString *)description suggetion:(NSString *)suggestion {
     NSDictionary *errorDic = @ {
-        NSLocalizedDescriptionKey:@"timeout",
-        NSLocalizedRecoverySuggestionErrorKey:@"please try again"
+        NSLocalizedDescriptionKey:description,
+        NSLocalizedRecoverySuggestionErrorKey:suggestion
     };;
     
     NSError *error = [[NSError alloc] initWithDomain:kDDBluetoothErrorDomain code:errorCode userInfo:errorDic];

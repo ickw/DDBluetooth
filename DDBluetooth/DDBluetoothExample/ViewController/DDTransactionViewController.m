@@ -16,6 +16,7 @@
 #import "ViewStates.h"
 #import "DateTimeUtil.h"
 #import "AlertUtil.h"
+#import "DDButton.h"
 
 @interface DDTransactionViewController () <UITableViewDataSource, UITableViewDelegate, DDTransactionViewCellDelegate, DDTransactionAgentDelegate>
 
@@ -123,6 +124,8 @@
     
     // Set textfield
     cell.writeDataTextField.text = model.writeValue;
+    if (model.writeValue.length > 0) cell.writeButton.enabled = YES;
+    else cell.writeButton.enabled = NO;
     
     // Set Switch
     cell.writeResponseSwitch.on = model.isWriteWithResponse;

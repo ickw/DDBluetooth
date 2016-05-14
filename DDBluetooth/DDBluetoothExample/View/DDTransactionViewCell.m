@@ -9,13 +9,13 @@
 #import "DDTransactionViewCell.h"
 #import "DDButton.h"
 
-
 @implementation DDTransactionViewCell
 
 - (void)awakeFromNib {
     // Initialization code
     [self setSelectionStyle:UITableViewCellSelectionStyleNone];
     self.writeDataTextField.delegate = self;
+    self.writeButton.enabled = NO;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -25,14 +25,7 @@
 }
 
 - (void)setHighlighted:(BOOL)highlighted animated:(BOOL)animated {
-    if (highlighted)
-    {
-        self.backgroundColor = [UIColor lightGrayColor];
-    }
-    else
-    {
-        self.backgroundColor = [UIColor whiteColor];
-    }
+
 }
 
 - (void)setEnabled:(BOOL)enabled {    
@@ -40,7 +33,7 @@
     {
         self.indicationButton.enabled = YES;
         self.readButton.enabled = YES;
-        self.writeButton.enabled = YES;
+        //self.writeButton.enabled = YES;
         self.writeResponseSwitch.enabled = YES;
     }
     else

@@ -289,7 +289,7 @@
 - (void)peripheral:(CBPeripheral *)peripheral didModifyServices:(NSArray<CBService *> *)invalidatedServices {
     NSLog(@"didModifyServices %@", invalidatedServices);
     
-    // Rediscover services
+    // Rediscover service
     [self discover:peripheral didDiscover:^(NSArray * _Nullable characteristics, NSError * _Nullable error) {
         NSLog(@"rediscovered characteristics %@", characteristics);
     }];
