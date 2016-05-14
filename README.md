@@ -289,8 +289,6 @@ else
 ・Retrive peripherals if exist   
 ・If intended peripherals cannot be retrieved, try to connect to designated peripheral with retry enabled.
 
-### Formatting
-・Add proper license descrptions & comments to source.
 
 
 ##License   
