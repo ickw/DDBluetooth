@@ -36,6 +36,10 @@
 		A64210EB1CE6FF4700D9A36F /* cell_image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A64210E71CE6FF4700D9A36F /* cell_image@2x.png */; };
 		A64210EC1CE6FF4700D9A36F /* cell_image@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A64210E91CE6FF4700D9A36F /* cell_image@3x.png */; };
 		A64307B61CD20A2600396DB3 /* DDButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A64307B51CD20A2600396DB3 /* DDButton.m */; };
+		A66F9B6E1CEEB08200B0524A /* RetrieveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A66F9B6D1CEEB08200B0524A /* RetrieveViewController.m */; };
+		A66F9B701CEECF3600B0524A /* tab_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A66F9B6F1CEECF3600B0524A /* tab_icon.png */; };
+		A66F9B721CEECF3B00B0524A /* tab_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A66F9B711CEECF3B00B0524A /* tab_icon@2x.png */; };
+		A66F9B741CEECF3F00B0524A /* tab_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A66F9B731CEECF3F00B0524A /* tab_icon@3x.png */; };
 		A699B6C41CCF5EA600320FA0 /* CBPeripheral+DD.m in Sources */ = {isa = PBXBuildFile; fileRef = A699B6C31CCF5EA600320FA0 /* CBPeripheral+DD.m */; };
 		A6DEDF331CE0876A00C32C2C /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = A6DEDF321CE0876A00C32C2C /* Constants.m */; };
 /* End PBXBuildFile section */
@@ -98,6 +102,11 @@
 		A64210E91CE6FF4700D9A36F /* cell_image@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cell_image@3x.png"; sourceTree = "<group>"; };
 		A64307B41CD20A2600396DB3 /* DDButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDButton.h; sourceTree = "<group>"; };
 		A64307B51CD20A2600396DB3 /* DDButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDButton.m; sourceTree = "<group>"; };
+		A66F9B6C1CEEB08200B0524A /* RetrieveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RetrieveViewController.h; sourceTree = "<group>"; };
+		A66F9B6D1CEEB08200B0524A /* RetrieveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RetrieveViewController.m; sourceTree = "<group>"; };
+		A66F9B6F1CEECF3600B0524A /* tab_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_icon.png; sourceTree = "<group>"; };
+		A66F9B711CEECF3B00B0524A /* tab_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_icon@2x.png"; sourceTree = "<group>"; };
+		A66F9B731CEECF3F00B0524A /* tab_icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_icon@3x.png"; sourceTree = "<group>"; };
 		A699B6C21CCF5EA600320FA0 /* CBPeripheral+DD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CBPeripheral+DD.h"; sourceTree = "<group>"; };
 		A699B6C31CCF5EA600320FA0 /* CBPeripheral+DD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CBPeripheral+DD.m"; sourceTree = "<group>"; };
 		A6DEDF311CE0876A00C32C2C /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
@@ -304,6 +313,8 @@
 				A64210D51CE6FDCF00D9A36F /* DDScanViewController.m */,
 				A64210D61CE6FDCF00D9A36F /* DDTransactionViewController.h */,
 				A64210D71CE6FDCF00D9A36F /* DDTransactionViewController.m */,
+				A66F9B6C1CEEB08200B0524A /* RetrieveViewController.h */,
+				A66F9B6D1CEEB08200B0524A /* RetrieveViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -329,6 +340,7 @@
 		A64210E41CE6FF4700D9A36F /* @1x */ = {
 			isa = PBXGroup;
 			children = (
+				A66F9B6F1CEECF3600B0524A /* tab_icon.png */,
 				A64210E51CE6FF4700D9A36F /* cell_image.png */,
 			);
 			path = "@1x";
@@ -337,6 +349,7 @@
 		A64210E61CE6FF4700D9A36F /* @2x */ = {
 			isa = PBXGroup;
 			children = (
+				A66F9B711CEECF3B00B0524A /* tab_icon@2x.png */,
 				A64210E71CE6FF4700D9A36F /* cell_image@2x.png */,
 			);
 			path = "@2x";
@@ -345,6 +358,7 @@
 		A64210E81CE6FF4700D9A36F /* @3x */ = {
 			isa = PBXGroup;
 			children = (
+				A66F9B731CEECF3F00B0524A /* tab_icon@3x.png */,
 				A64210E91CE6FF4700D9A36F /* cell_image@3x.png */,
 			);
 			path = "@3x";
@@ -407,10 +421,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A66F9B701CEECF3600B0524A /* tab_icon.png in Resources */,
 				A64210EB1CE6FF4700D9A36F /* cell_image@2x.png in Resources */,
 				A63CC5311CCF1C2F00241301 /* Assets.xcassets in Resources */,
 				A64210EC1CE6FF4700D9A36F /* cell_image@3x.png in Resources */,
+				A66F9B741CEECF3F00B0524A /* tab_icon@3x.png in Resources */,
 				A63CC52F1CCF1C2F00241301 /* Main.storyboard in Resources */,
+				A66F9B721CEECF3B00B0524A /* tab_icon@2x.png in Resources */,
 				A64210EA1CE6FF4700D9A36F /* cell_image.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -435,6 +452,7 @@
 				A64307B61CD20A2600396DB3 /* DDButton.m in Sources */,
 				A63CC5B81CCF1CDD00241301 /* DDStoredPeripherals.m in Sources */,
 				A63CC5B51CCF1CDD00241301 /* DDTimeoutConstant.m in Sources */,
+				A66F9B6E1CEEB08200B0524A /* RetrieveViewController.m in Sources */,
 				A63CC5B41CCF1CDD00241301 /* DDPeripheralConstant.m in Sources */,
 				A63CC5B91CCF1CDD00241301 /* DDScannedPeripherals.m in Sources */,
 				A64210DE1CE6FDCF00D9A36F /* DDTransactionViewCell.m in Sources */,
@@ -559,6 +577,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DDBluetooth.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -574,6 +593,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DDBluetooth.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

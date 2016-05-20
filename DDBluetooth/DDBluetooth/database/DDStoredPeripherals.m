@@ -26,9 +26,9 @@
 
 @implementation DDStoredPeripherals
 
-static NSString *key = @"storedPeripherals";
+static NSString *key = @"key_stored_peripherals";
 
-+ (void)initialize {
++ (void)initializeStorage {
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     NSArray *identifiers = [userDefaults arrayForKey:key];
     if (!identifiers)
@@ -72,11 +72,17 @@ static NSString *key = @"storedPeripherals";
             
             if (uuidString)
             {
+                BOOL test = YES;
                 for (NSString *identifier in existingIdentifiers) {
-                    if ([identifier isEqualToString:uuidString]) break;
+                
+                    if ([identifier isEqualToString:uuidString])
+                    {
+                        test = NO;
+                        break;
+                    }
                 }
                 
-                [identifiers addObject:uuidString];
+                if (test) [identifiers addObject:uuidString];
             }
         }
         else
@@ -94,10 +100,8 @@ static NSString *key = @"storedPeripherals";
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     NSArray *identifiers = [userDefaults arrayForKey:key];
     NSMutableArray *newIdentifiers = [NSMutableArray arrayWithArray:identifiers];
-    
     NSString *uuidString = UUID.UUIDString;
     [newIdentifiers removeObject:uuidString];
-    
     [userDefaults setObject:newIdentifiers forKey:key];
     [userDefaults synchronize];
 }

@@ -90,8 +90,18 @@
 - (void)disconnect:(CBPeripheral *)peripheral didDisconnect:(DDCentralBlockConnectionStatus)completion;
 
 /**
- WIP: not implemented yet.
+ Get array of peripherals that are cached in iDevice
+ 
+ @param identifiers NSArray object of peripherl identifiers
+ 
+ @return NSArray object of found CBPripheral objects
  */
 - (NSArray *)retrievePeripheralsWithIdentifiers:(NSArray *)identifiers;
+
+/**
+ Remove a cached peripheral
+ @param UUID UUID (identifier) of peripheral
+ */
+- (void)removeStoredPeripheralWithUUID:(NSUUID *)UUID;
 
 @end

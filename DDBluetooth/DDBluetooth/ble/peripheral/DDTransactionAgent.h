@@ -61,7 +61,7 @@ typedef void (^DDTransactionAgentBlock)(DDTransactionAgentCallbackType type, NSD
  @param value `NSData` object that is notified value.
  @param error `NSError` object comes with notification. Can be `nil`
  */
-- (void)didNotifiedValue:(CBCharacteristic *)characteristic value:(NSData *)value error:(NSError *)error;
+- (void)didReceiveNotification:(CBCharacteristic *)characteristic value:(NSData *)value error:(NSError *)error;
 
 @end
 

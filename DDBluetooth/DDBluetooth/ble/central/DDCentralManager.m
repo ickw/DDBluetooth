@@ -25,6 +25,7 @@
 #import "DDCentralManager.h"
 #import "CBPeripheral+DD.h"
 #import "DDPeripheralConstant.h"
+#import "DDStoredPeripherals.h"
 
 @interface DDCentralManager ()
 
@@ -48,10 +49,8 @@ static DDCentralManager *sharedManager_ = nil;
     return sharedManager_;
 }
 
-/**
- In order to prevent this singleton instance from being allocated by other instance,
- override allocWithZone to make it sure it only returns self once
- */
+
+/// In order to prevent this singleton instance from being allocated by other instance, override allocWithZone to make it sure it only returns self once
 + (id)allocWithZone:(struct _NSZone *)zone {
     __block id ret = nil;
     
@@ -64,9 +63,7 @@ static DDCentralManager *sharedManager_ = nil;
     return  ret;
 }
 
-/**
- Override copyWithZone to make is sure that copied instance still returns self
- */
+/// Override copyWithZone to make is sure that copied instance still returns self
 - (id)copyWithZone:(NSZone *)zone {
     return self;
 }
@@ -75,11 +72,13 @@ static DDCentralManager *sharedManager_ = nil;
     self.didUpdateCentralStateBlock = completion;
     self.connectionStatus = ConnectionStatusUnknown;
     self.centralManager = [[CBCentralManager alloc] initWithDelegate:self queue:queue options:options];
+    
+    /// initialize local storage
+    [DDStoredPeripherals initializeStorage];
 }
 
-/**
- Make shared instace nil for re-allocation after deallocation
- */
+
+/// Make shared instace nil for re-allocation after deallocation
 - (void)terminate {
     sharedManager_ = nil;
 }
@@ -128,6 +127,10 @@ static DDCentralManager *sharedManager_ = nil;
     return result;
 }
 
+- (void)removeStoredPeripheralWithUUID:(NSUUID *)UUID {
+    [DDStoredPeripherals deleteUUID:UUID];
+}
+
 #pragma mark - CBCentralManagerDelegate Protocol methods
 
 - (void)centralManagerDidUpdateState:(CBCentralManager *)central {
@@ -139,6 +142,9 @@ static DDCentralManager *sharedManager_ = nil;
     peripheral.foundRSSI = RSSI;
     peripheral.serviceUUIDs = [advertisementData objectForKey:@"kCBAdvDataServiceUUIDs"];
     peripheral.localName = [advertisementData objectForKey:@"kCBAdvDataLocalName"];
+    
+    /// save pripherals uuid to local storage
+    [DDStoredPeripherals saveUUID:peripheral.identifier];
     
     self.didDiscoverPeripheralBlock(peripheral);
 }

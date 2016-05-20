@@ -157,6 +157,14 @@
     });
 }
 
+- (NSArray *)retrievePeripheralsWithIdentifiers:(NSArray *)identifiers {
+    return [[DDCentralManager sharedManager] retrievePeripheralsWithIdentifiers:identifiers];
+}
+
+- (void)removeStoredPeripheralWithUUID:(NSUUID *)UUID {
+    [[DDCentralManager sharedManager] removeStoredPeripheralWithUUID:UUID];
+}
+
 - (void)startConnectionCheckTimer {
     self.isConnectionCheckValid = YES;
     if(self.connectionTrialTimer.valid) [self.connectionTrialTimer invalidate];

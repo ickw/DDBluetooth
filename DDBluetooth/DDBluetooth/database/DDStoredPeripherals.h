@@ -29,7 +29,7 @@
  */
 @interface DDStoredPeripherals : NSObject
 
-+ (void)initialize;
++ (void)initializeStorage;
 
 + (NSArray *)getIdentifiers;
 

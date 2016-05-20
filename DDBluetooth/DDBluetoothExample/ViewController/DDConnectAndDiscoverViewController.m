@@ -39,7 +39,8 @@
     // Do any additional setup after loading the view.
     
     // Set Navbar title
-    if (self.ddPeripheral.localName) self.title = self.ddPeripheral.localName;
+    if (self.ddPeripheral.localName) self.title = self.ddPeripheral.localName; //
+    else if (self.ddPeripheral.name) self.title = self.ddPeripheral.name; // from retrieve view
     else self.title = @"unknown";
     [self setViewState:DDViewStateDisconnected];
     

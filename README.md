@@ -8,7 +8,8 @@ Simply add "DDBluetooth" directory to your project
 <img src="screenshots/screenshot-01.jpg" width="320">
 <img src="screenshots/screenshot-02.jpg" width="320">
 <img src="screenshots/screenshot-03.jpg" width="320">
-<img src="screenshots/screenshot-04.jpg" width="320">       
+<img src="screenshots/screenshot-04.jpg" width="320">   
+<img src="screenshots/screenshot-05.jpg" width="320">       
 
 ##Usage
 ###Initialize
@@ -234,6 +235,9 @@ there are 2 ways to handle notified values from peripheral
 }];
 ```
 
+### Retrieve
+・retrieve peripherals discovered in the past.    
+
 ##Practical Design for actual product development & iOS Cache Countermeasures
 
 ####Considering actual product development situation, the library comes with some useful features
@@ -287,13 +291,14 @@ else
 }
 ```
 
+##Latest Changes
+
+###2016. 5. 20
+Added retrieve peripherals method    
 
 ##TODO
 
-### Retrieve
-・Retrive peripherals if exist   
-・If intended peripherals cannot be retrieved, try to connect to designated peripheral with retry enabled.
-
+### retrieveConnectedPeripheralsWithServices
 
 
 ##License   

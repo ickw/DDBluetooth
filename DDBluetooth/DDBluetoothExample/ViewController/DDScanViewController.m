@@ -15,7 +15,6 @@
 #import "CBPeripheral+DD.h"
 #import "Constants.h"
 
-
 @interface DDScanViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *scanButton;
@@ -66,7 +65,7 @@
 }
 
 
-#pragma mark - Segue methods
+#pragma mark - Navigation
 
 - (void)pushTransactionView:(CBPeripheral *)peripheral {
     self.selectedPeripheral = peripheral;
@@ -94,7 +93,8 @@
     else cell.localNameLabel.text = @"unknown";
     cell.serviceUUIDLabel.text = [p.serviceUUIDs componentsJoinedByString:@", "];
     cell.identifierLabel.text = p.identifier.UUIDString;
-    cell.rssiLabel.text = [NSString stringWithFormat:@"%@", p.foundRSSI];
+    if(p.foundRSSI) cell.rssiLabel.text = [NSString stringWithFormat:@"%@", p.foundRSSI];
+    else cell.rssiLabel.text = @"";
     cell.iconImageView.image = [UIImage imageNamed:@"cell_image"];
     
     return cell;

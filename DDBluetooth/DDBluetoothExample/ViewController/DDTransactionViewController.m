@@ -58,9 +58,6 @@
 
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
-    
-    // delete all data
-    [self.characteristicModels removeAllObjects];
 }
 
 - (void)setCell:(DDTransactionViewCell *)cell model:(DDTransactionCellModel *)model {
@@ -325,7 +322,7 @@
 
 #pragma mark - DDTransactionAgentDelegate methods
 
-- (void)didNotifiedValue:(CBCharacteristic *)characteristic value:(NSData *)value error:(NSError *)error {
+- (void)didReceiveNotification:(CBCharacteristic *)characteristic value:(NSData *)value error:(NSError *)error {
     
     if (error)
     {

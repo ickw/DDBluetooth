@@ -188,7 +188,7 @@ typedef NS_ENUM(NSUInteger, DDTransactionAgentState) {
     else if (self.currrentState == DDTransactionAgentStateDefault)
     {
         self.transactionBlock(DDTransactionAgentCallbackTypeNotifiedValue, characteristic.value, error);
-        [self.delegate didNotifiedValue:characteristic value:characteristic.value error:error];
+        [self.delegate didReceiveNotification:characteristic value:characteristic.value error:error];
     }
 }
 

@@ -71,6 +71,21 @@ typedef NS_ENUM(NSUInteger, DDConnectAgentStatus) {
 - (void)startConnectionWithRetry:(CBPeripheral *)peripheral withMaxRetryCount:(int)maxRetryCount interval:(NSTimeInterval)intervalSeconds didConnect:(DDCentralBlockConnectionStatus)completion;
 
 /**
+ Get array of peripherals that are cached in iDevice
+ 
+ @param identifiers NSArray object of peripherl identifiers
+ 
+ @return NSArray object of found CBPripheral objects
+ */
+- (NSArray *)retrievePeripheralsWithIdentifiers:(NSArray *)identifiers;
+
+/**
+ Remove a cached peripheral
+ @param UUID UUID (identifier) of peripheral
+ */
+- (void)removeStoredPeripheralWithUUID:(NSUUID *)UUID;
+
+/**
  Start discovering characteristics of a peripheral.
  
  @param peripheral A `CBPeripheral` object connecting to. Must not be `nil`.
